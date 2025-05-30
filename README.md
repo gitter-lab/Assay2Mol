@@ -11,5 +11,7 @@ Then, fill in your API key for LLM service (e.g. GPT, DeepSeek). If you want to 
 
 Then, run `python CrossDock/CrossDock_exp.py`. 
 
+For hERG experiment, simply run `python hERG/hERG_exp.py`. You can also change the hERG description to other target of interest, to increase molecules' specificity. You need to change the prompt accordingly.
+
 ## Running docking
 We use the same docking process as [TargetDiff](https://github.com/guanjq/targetdiff). Please check TargetDiff repo for environment requirement. The code in docking/ is copied from TargetDiff and modified for Assay2Mol.
