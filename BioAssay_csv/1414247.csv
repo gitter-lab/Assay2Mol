@@ -1,0 +1,16 @@
+PUBCHEM_RESULT_TAG,PUBCHEM_SID,PUBCHEM_CID,PUBCHEM_EXT_DATASOURCE_SMILES,PUBCHEM_ACTIVITY_OUTCOME,PUBCHEM_ACTIVITY_SCORE,PUBCHEM_ACTIVITY_URL,PUBCHEM_ASSAYDATA_COMMENT,Standard Type,Standard Relation,Standard Value,Standard Units
+RESULT_TYPE,,,,,,,,STRING,STRING,FLOAT,STRING
+RESULT_DESCR,,,,,,,,Standardized activity type (e.g. IC50 rather than Ic-50/Ic50/ic50/ic-50),"Qualifier (e.g. >, <, =) for 'Standard Value'",Standardized activity value transformed to common units: e.g. mM concentrations converted to nM,Selected units for 'Standard Type': e.g. concentrations are in nM
+1,404695744,145979181,C1CC(C[C@@H]([C@H]1C2=CC=CC=C2)C(=O)N[C@@H](CO)C3=CC=CC=C3)(F)F,Unspecified,,,,%max,=,108,%
+2,404699479,145981605,CS(=O)(=O)C1=CC=CC(=C1)[C@H](CO)NC(=O)C2=C(C=CC(=C2)S(F)(F)(F)(F)F)OC3=CC=CC=C3,Unspecified,,,,%max,=,101,%
+3,404699639,145981712,CS(=O)(=O)C1=CC=CC(=C1)CNC(=O)C2=C(C=CC(=C2)S(F)(F)(F)(F)F)OC3=CC=CC=C3,Unspecified,,,,%max,=,185,%
+4,404700856,145982485,C[C@@H](C1=CC(=CC=C1)S(=O)(=O)C)NC(=O)C2=C(C=CC(=C2)C(F)(F)F)OC3=CC=CC=C3,Unspecified,,,,%max,=,134,%
+5,404701533,145982955,C1CC(C[C@@H]([C@H]1C2=CC=CC=C2)C(=O)N[C@@H](CO)C3=CC(=CC=C3)C(F)(F)F)(F)F,Unspecified,,,,%max,=,96,%
+6,404712259,145990174,CS(=O)(=O)C1=CC=CC(=C1)CNC(=O)C2=C(C=CC(=C2)C(F)(F)F)OC3=CC=CC=C3,Unspecified,,,,%max,=,245,%
+7,404712416,145990268,C[C@@H](C1=CC=CC=C1)NC(=O)[C@H]2CC(CC[C@@H]2C3=CC=CC=C3)(F)F,Unspecified,,,,%max,=,140,%
+8,404713045,145990676,CS(=O)(=O)C1=CC=CC(=C1)CNC(=O)C2=C(C=CC(=C2)C(F)(F)F)SC3=CC=CC=C3,Unspecified,,,,%max,=,175,%
+9,404713503,145990965,C[C@@H](C1=CC(=CC=C1)S(=O)(=O)C)NC(=O)C2=CC(=C(C=C2OC3=CC=CC=C3)F)F,Unspecified,,,,%max,=,132,%
+10,404714958,145991916,C1CC[C@@H]([C@H](C1)C2=CC=CC=C2)C(=O)N[C@@H](CO)C3=CC=CC=C3,Unspecified,,,,%max,=,165,%
+11,404716589,145992954,CS(=O)(=O)C1=CC=CC(=C1)[C@H](CO)NC(=O)C2=C(C=CC(=C2)C(F)(F)F)OC3=CC=CC=C3,Unspecified,,,,%max,=,77,%
+12,404716907,145993164,C1CC(C[C@@H]([C@H]1C2=CC=CC=C2)C(=O)N[C@@H](CO)C3=CC(=CC=C3)Cl)(F)F,Unspecified,,,,%max,=,141,%
+13,404717453,145993495,C[C@@H](C1=CC=CC=C1)NC(=O)[C@H]2CCCC[C@@H]2C3=CC=CC=C3,Unspecified,,,,%max,=,115,%

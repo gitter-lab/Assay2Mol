@@ -247,7 +247,7 @@ for index in range(100):
     generate_prompt = generate_prompt + protein_description + "\n## BioAssays"
     query = protein_description
 
-    searched_assays = search_bioassay(query=query, uniprot_id=pdb2uniprot[crossdock_test[index]['pdb_id']], minimum_example=2*num_mol, maximum_BioAssay=num_assays, maximum_molecule_size=max_molecule_size)
+    searched_assays = search_bioassay(query=query, uniprot_id=pdb2uniprot[crossdock_test[index]['pdb_id']], minimum_example=2*num_mol, maximum_BioAssay=num_assays)
     retrieve_assays.append(searched_assays)
 
     jq_schema = ".PC_AssaySubmit.assay"
@@ -357,11 +357,11 @@ for index in range(100):
     gpt_generated_SMILES = list(set(gpt_generated_SMILES))
         
     generated_SMILES[index].extend(gpt_generated_SMILES)
-    with open(f"CrossDock/gpt_input_content_gpt4o_large.pkl", "wb") as f:
+    with open(f"CrossDock/gpt_input_content_gpt4o.pkl", "wb") as f:
         pickle.dump(contents, f)
-    with open(f"CrossDock/gpt_output_content_gpt4o_large.pkl", "wb") as f:
+    with open(f"CrossDock/gpt_output_content_gpt4o.pkl", "wb") as f:
         pickle.dump(responses, f)
-    with open(f"CrossDock/gpt_generated_SMILES_gpt4o_large.pkl", "wb") as f:
+    with open(f"CrossDock/gpt_generated_SMILES_gpt4o.pkl", "wb") as f:
         pickle.dump(generated_SMILES, f)
-    with open(f"CrossDock/gpt_retrieve_assay_gpt4o_large.pkl", "wb") as f:
+    with open(f"CrossDock/gpt_retrieve_assay_gpt4o.pkl", "wb") as f:
         pickle.dump(retrieve_assays, f)
