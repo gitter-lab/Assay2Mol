@@ -1,5 +1,6 @@
 # Datasets from Zenodo
-BioAssay_vectorbase/
+BioAssay_vectorbase/*
+!BioAssay_vectorbase/.gitkeep
 docking/test_set/
 
 # Byte-compiled / optimized / DLL files
