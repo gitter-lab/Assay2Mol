@@ -16,3 +16,6 @@ For the hERG experiment, run `python hERG/hERG_exp.py`. You can also change the 
 
 ## Running docking
 We use the same docking process as [TargetDiff](https://github.com/guanjq/targetdiff). Please check the TargetDiff repo for the environment requirement. The code in `docking/` is copied from TargetDiff under its [MIT License](https://github.com/guanjq/targetdiff/blob/142f1eb7178480d435fe0b8cb95a99beb48997c7/LICIENCE) and modified for Assay2Mol.
+
+## Supplementary figures
+The `Ablation_study/` directory contains additional supplementary figures for the manuscript that were used to support hyperparameter tuning.

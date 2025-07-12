@@ -1,4 +1,3 @@
-
 import pickle
 import os
 from rdkit import Chem
@@ -105,15 +104,15 @@ class VinaDock(object):
             return pocket_center, box_size
     
     def get_box(self, ref=None, buffer=0):
-        '''
-        ref: reference pdb to define pocket. 
-        buffer: buffer size to add 
+        """
+        ref: reference pdb to define pocket.
+        buffer: buffer size to add
 
-        if ref is not None: 
-            get the max and min on x, y, z axis in ref pdb and add buffer to each dimension 
-        else: 
-            use the entire protein to define pocket 
-        '''
+        if ref is not None:
+            get the max and min on x, y, z axis in ref pdb and add buffer to each dimension
+        else:
+            use the entire protein to define pocket
+        """
         if ref is None: 
             ref = self.prot_pdbqt
         self.pocket_center, self.box_size = self._max_min_pdb(ref, buffer)

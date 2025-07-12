@@ -220,7 +220,6 @@ for protein_num in range(100):
             human_message = HumanMessage(content=message)
             output = llm([human_message]).content
 
-
             response[protein_num].append(output)
 
             for molecule in re.findall(pattern, output):
