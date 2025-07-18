@@ -1,6 +1,11 @@
 # Assay2Mol: Large Language Model-based Drug Design Using BioAssay Context
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15871304.svg)](https://doi.org/10.5281/zenodo.15871304)
 
+## Citation
+[Assay2Mol: large language model-based drug design using BioAssay context](https://arxiv.org/abs/2507.12574)  
+Yifan Deng, Spencer S. Ericksen, Anthony Gitter (2025)  
+arXiv:2507.12574 [cs.LG]
+
 ## Data preparation
 Download the BioAssay embedding files `index.faiss` and `index.pkl` from [Zenodo](https://doi.org/10.5281/zenodo.15867214) and put both of them in the directory `BioAssay_vectorbase/`.
 
