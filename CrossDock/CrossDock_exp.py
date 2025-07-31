@@ -48,7 +48,19 @@ def count_total_atoms_from_mol(mol):
     total_count = mol.GetNumAtoms() if mol else 0
     return total_count
 
-def search_bioassay(query: str, uniprot_id, minimum_example=16,  maximum_BioAssay=8):
+def search_bioassay(query: str, uniprot_id, minimum_example: int = 16,  maximum_BioAssay: int = 8):
+    """
+    Given a textual protein description as a query, perform a similarity search of BioAssay text using the vectorstore
+    and return relevant BioAssays
+    Args:
+        query: a textual protein description
+        uniprot_id: the UniProt ID that corresponds to the protein in the query, which is only used to exclude BioAssays
+        corresponding to that protein from the returned list of context
+        minimum_example: the minimum number of activity results and SMILES in each BioAssay
+        maximum_BioAssay: the maximum number of BioAssays to return
+
+    Returns: relevant BioAssays
+    """
     docs_and_score = vectorstore.similarity_search_with_relevance_scores(query, k=1000)
     docs = [i[0] for i in docs_and_score]
     print(f"Number of documents retrieved: {len(docs)}")
@@ -241,6 +253,7 @@ contents = [[] for i in range(100)]
 retrieve_assays = []
 
 
+# Currently only the 'text' and 'pdb_id' fields are used in the CrossDock data
 for index in range(100):
     generate_prompt = generate_prompt_base
     protein_description = crossdock_test[index]['text'] + "."
